@@ -1,4 +1,5 @@
-import { Indicator } from 'mint-ui';
+// import { Indicator } from 'mint-ui';
+import Toast from 'mint-ui/lib/indicator';
 
 class Load {
   constructor() {

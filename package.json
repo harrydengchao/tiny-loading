@@ -1,7 +1,7 @@
 {
   "name": "tiny-loading",
   "version": "0.5.0",
-  "description": "This is a loading component",
+  "description": "This is a vue2 loading component",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -30,6 +30,7 @@
     "babel-preset-stage-2": "^6.22.0",
     "cross-env": "^3.2.3",
     "css-loader": "^0.26.2",
+    "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.10.1",
     "style-loader": "^0.13.2",
     "vue-loader": "^11.1.4",

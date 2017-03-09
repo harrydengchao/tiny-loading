@@ -1,10 +1,13 @@
-// import { Indicator } from 'mint-ui';
-import Toast from 'mint-ui/lib/indicator';
+// import 'lib-flexible';
+// 不主动引入 lib-flexible，避免混乱开发者的 viewport 设置
+// 推荐开发者 自行引入 lib-flexible
+import './scss/loading.scss';
+import { Indicator } from 'mint-ui';
 
 class Load {
   constructor() {
     this.config = {
-      text: '加载中...'
+      text: 'loading...'
     }
   }
 

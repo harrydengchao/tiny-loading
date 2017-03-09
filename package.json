@@ -1,6 +1,6 @@
 {
   "name": "tiny-loading",
-  "version": "0.5.0",
+  "version": "0.1.8",
   "description": "This is a vue2 loading component",
   "main": "index.js",
   "scripts": {
@@ -30,8 +30,9 @@
     "babel-preset-stage-2": "^6.22.0",
     "cross-env": "^3.2.3",
     "css-loader": "^0.26.2",
-    "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.10.1",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.3",
     "style-loader": "^0.13.2",
     "vue-loader": "^11.1.4",
     "vue-template-compiler": "^2.2.1",

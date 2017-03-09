@@ -1,0 +1,34 @@
+// $px: number
+@function px($px, $dpr) {
+  $size: nth($px, 1);
+  $value: #{$size * $dpr}px;
+
+  @if index($px, !important) {
+    $value: join($value, !important);
+  }
+  @return $value;
+}
+
+/** 适配 **/
+[data-dpr="1"] .mint-spinner-snake {
+  height: px(32 !important, 1);
+  width: px(32 !important, 1);
+}
+[data-dpr="2"] .mint-spinner-snake {
+  height: px(32 !important, 2);
+  width: px(32 !important, 2);
+}
+[data-dpr="3"] .mint-spinner-snake {
+  height: px(32 !important, 2);
+  width: px(32 !important, 2);
+}
+
+[data-dpr="1"] .mint-indicator-text {
+  font-size: px(16, 1);
+}
+[data-dpr="2"] .mint-indicator-text {
+  font-size: px(16, 2);
+}
+[data-dpr="3"] .mint-indicator-text {
+  font-size: px(16, 3);
+}

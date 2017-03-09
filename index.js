@@ -1,1 +1,1 @@
-module.exports = require('./dist/dist.min.js');
+module.exports = require('./lib/loading.min.js');

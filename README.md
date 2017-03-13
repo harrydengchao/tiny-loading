@@ -12,6 +12,7 @@ npm install --save tiny-loading
 
 ### 使用
 ```javascript
+// 依赖 mint-ui
 import Loading from 'tiny-loading';
 
 // open loading

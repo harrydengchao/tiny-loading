@@ -3,7 +3,7 @@ var webpack = require('webpack')
 
 module.exports = {
   entry: {
-    loading: './src/loading.js',
+    loading: './src/loading.js'
   },
   output: {
     path: path.resolve(__dirname, './lib'),
@@ -12,6 +12,19 @@ module.exports = {
     library: 'tiny-loading',
     libraryTarget: 'umd',
     umdNamedDefine: true
+  },
+  externals: {
+    vue: {
+      root: 'Vue',
+      commonjs: 'vue',
+      commonjs2: 'vue',
+      amd: 'vue'
+    },
+    'mint-ui': {
+      commonjs: 'mint-ui',
+      commonjs2: 'mint-ui',
+      amd: 'mint-ui'
+    }
   },
   module: {
     rules: [
@@ -71,6 +84,6 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
-    }),
+    })
   ])
 }
